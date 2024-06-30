@@ -10,13 +10,13 @@ export default function Footer() {
 		<>
 			<div className="sticky top-full flex justify-evenly mb-5">
 				<Link to="https://github.com/simonjbr">
-					<IoLogoGithub className="text-5xl hover:text-gray-500 cursor-pointer" />
+					<IoLogoGithub className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
 				<Link to="https://au.linkedin.com/">
-					<IoLogoLinkedin className="text-5xl hover:text-gray-500 cursor-pointer" />
+					<IoLogoLinkedin className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
 				<Link to="https://stackoverflow.com/">
-					<IoLogoStackoverflow className="text-5xl hover:text-gray-500 cursor-pointer" />
+					<IoLogoStackoverflow className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
 			</div>
 		</>
