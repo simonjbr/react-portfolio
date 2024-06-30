@@ -15,7 +15,7 @@ export default function Navigation() {
 						}`}
 						to="/"
 					>
-						About
+						About Me
 					</Link>
 				</li>
 				<li>
@@ -72,7 +72,7 @@ export default function Navigation() {
 							}`}
 							to="/"
 						>
-							About
+							About Me
 						</Link>
 					</li>
 					<li>
