@@ -7,7 +7,7 @@ const About = () => {
 				<h1 className="text-4xl underline">About Me</h1>
 				<div className="">
 					<RxAvatar className="text-9xl my-12" />
-					<p>
+					<p className='text-xl px-4'>
 						The sun set over the tranquil lake, casting a warm,
 						golden glow across the water. Birds chirped softly in
 						the distance, their melodies blending harmoniously with
