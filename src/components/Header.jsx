@@ -10,7 +10,7 @@ export default function Header() {
 						<Link to="/">simonjbr</Link>
 					</h1>
 				</div>
-				<div className="navbar-end min-w-[380px]">
+				<div className="navbar-end sm:min-w-[380px]">
 					<Navigation />
 				</div>
 			</div>
