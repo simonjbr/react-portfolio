@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<>
 			<article className="pt-4 ps-4">
-				<h1 className="text-3xl underline">About Me</h1>
+				<h1 className="text-4xl underline">About Me</h1>
 				<div className="">
 					<RxAvatar className="text-9xl my-12" />
 					<p>
