@@ -43,7 +43,7 @@ const Portfolio = () => {
 				<h1 className="text-4xl underline">Portfolio</h1>
 				<div className="columns-2 max-sm:columns-1 my-12 px-6 gap-6">
 					{projects.map((project) => (
-						<div key={project.id} className="py-3 relative">
+						<div key={project.id} className="p-3 relative">
 							<Project {...project} />
 						</div>
 					))}
