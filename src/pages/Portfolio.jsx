@@ -31,9 +31,25 @@ const Portfolio = () => {
 			id: 4,
 			title: 'vivoChat',
 			gitHub: 'TBA',
-			description: 'MERN Stack',
+			description: 'MERN Stack, Socket.io',
 			deploy: '',
 			image: 'src/assets/project-image-vivochat-crop.png',
+		},
+		{
+			id: 5,
+			title: 'Weather Dashboard',
+			gitHub: 'https://github.com/simonjbr/weather-dashboard',
+			description: 'JQuery, Bootstrap',
+			deploy: 'https://simonjbr.github.io/weather-dashboard/',
+			image: 'src/assets/project-image-weather-dashboard-crop.png',
+		},
+		{
+			id: 6,
+			title: 'Social Network API',
+			gitHub: 'https://github.com/simonjbr/social-network-api',
+			description: 'Node.js, Express, MongoDB, Mongoose',
+			deploy: 'https://github.com/simonjbr/social-network-api',
+			image: 'src/assets/project-image-social-network-api-crop.png',
 		},
 	];
 
