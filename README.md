@@ -22,10 +22,13 @@ In order to run the application the user must have [node.js](https://nodejs.org/
 To start the application the user must run `npm start`.
 
 The portfolio should now automatically open in a tab of your default browser. Users can inspect the page to find:
-- About Me page with an avatar and a description
-- Portfolio with 6 of my projects, each with links to GitHub repositories and deployed pages
-- Contact page with a form.
-- Resume with a link to download my resume and a list of my frontend and backend proficiencies
+
+-   About Me page with an avatar and a description
+-   Portfolio with 6 of my projects, each with links to GitHub repositories and deployed pages
+-   Contact page with a form.
+-   Resume with a link to download my resume and a list of my frontend and backend proficiencies
+
+> Deployed application: [https://simonjbr-portfolio.netlify.app/](https://simonjbr-portfolio.netlify.app/)
 
 ## Credits
 
