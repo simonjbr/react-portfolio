@@ -1,5 +1,13 @@
 import Project from '../components/Project';
 
+// import project images
+import popChatImage from '../assets/project-image-popchat-crop.png';
+import boardgameBlissImage from '../assets/project-image-boardgame-bliss-crop.png';
+import techBlogImage from '../assets/project-image-techblog-crop.png';
+import vivoChatImage from '../assets/project-image-vivochat-crop.png';
+import weatherDashboardImage from '../assets/project-image-weather-dashboard-crop.png';
+import socialNetworkApiImage from '../assets/project-image-social-network-api-crop.png';
+
 const Portfolio = () => {
 	const projects = [
 		{
@@ -9,7 +17,7 @@ const Portfolio = () => {
 			description:
 				'Node.js, Express, PostgreSQL, Sequelize, Bulma, Handlebars, Multer',
 			deploy: 'https://triumvirate.onrender.com',
-			image: 'src/assets/project-image-popchat-crop.png',
+			image: popChatImage,
 		},
 		{
 			id: 2,
@@ -17,7 +25,7 @@ const Portfolio = () => {
 			gitHub: 'https://github.com/awesome-foursome/boardgame-bliss',
 			description: 'JavaScript, HTML, CSS, JQuery, Bulma',
 			deploy: 'https://awesome-foursome.github.io/boardgame-bliss/',
-			image: 'src/assets/project-image-boardgame-bliss-crop.png',
+			image: boardgameBlissImage,
 		},
 		{
 			id: 3,
@@ -25,7 +33,7 @@ const Portfolio = () => {
 			gitHub: 'https://github.com/simonjbr/tech-blog',
 			description: 'Node.js, Express, PostgreSQL, Sequelize, Handlebars',
 			deploy: 'https://tech-blog-v2l9.onrender.com/',
-			image: 'src/assets/project-image-techblog-crop.png',
+			image: techBlogImage,
 		},
 		{
 			id: 4,
@@ -33,7 +41,7 @@ const Portfolio = () => {
 			gitHub: 'TBA',
 			description: 'MERN Stack, Socket.io',
 			deploy: '',
-			image: 'src/assets/project-image-vivochat-crop.png',
+			image: vivoChatImage,
 		},
 		{
 			id: 5,
@@ -41,7 +49,7 @@ const Portfolio = () => {
 			gitHub: 'https://github.com/simonjbr/weather-dashboard',
 			description: 'JQuery, Bootstrap',
 			deploy: 'https://simonjbr.github.io/weather-dashboard/',
-			image: 'src/assets/project-image-weather-dashboard-crop.png',
+			image: weatherDashboardImage,
 		},
 		{
 			id: 6,
@@ -49,7 +57,7 @@ const Portfolio = () => {
 			gitHub: 'https://github.com/simonjbr/social-network-api',
 			description: 'Node.js, Express, MongoDB, Mongoose',
 			deploy: 'https://github.com/simonjbr/social-network-api',
-			image: 'src/assets/project-image-social-network-api-crop.png',
+			image: socialNetworkApiImage,
 		},
 	];
 
