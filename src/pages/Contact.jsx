@@ -1,4 +1,46 @@
+import { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
+
 const Contact = () => {
+	// const [name, setName] = useState('');
+	// const [email, setEmail] = useState('');
+	// const [message, setMessage] = useState('');
+
+	const [emptyField, setEmptyField] = useState(false);
+	const [invalidEmail, setInvalidEmail] = useState(false);
+
+	// validate input on blur
+	const handleOnBlur = (e) => {
+		const { target } = e;
+		const inputName = target.name;
+		const inputValue = target.value;
+
+		if (!inputValue) {
+			switch (inputName) {
+				case 'name':
+					setEmptyField(true);
+					break;
+				case 'email':
+					setEmptyField(true);
+					break;
+				case 'message':
+					setEmptyField(true);
+					break;
+				default:
+					console.error('invalid input name');
+			}
+		} else {
+			setEmptyField(false);
+		}
+
+		// validate email address with helper function
+		if (inputName === 'email' && !validateEmail(inputValue)) {
+			setInvalidEmail(true);
+		} else {
+			setInvalidEmail(false);
+		}
+	};
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		alert(
@@ -15,6 +57,8 @@ const Contact = () => {
 						<label className="text-2xl input input-bordered flex items-center gap-3 mb-3">
 							Name:
 							<input
+								onBlur={handleOnBlur}
+								name="name"
 								type="text"
 								className="grow text-gray-300"
 								placeholder="Enter name..."
@@ -23,12 +67,16 @@ const Contact = () => {
 						<label className="text-2xl input input-bordered flex items-center gap-3 mb-3">
 							Email:
 							<input
+								onBlur={handleOnBlur}
+								name="email"
 								type="text"
 								className="grow text-gray-300"
 								placeholder="Enter email..."
 							/>
 						</label>
 						<textarea
+							onBlur={handleOnBlur}
+							name="message"
 							type="text"
 							className="text-2xl w-full textarea textarea-bordered grow text-gray-300"
 							placeholder="Enter message..."
@@ -39,14 +87,38 @@ const Contact = () => {
 					</form>
 				</div>
 			</article>
+			{/* form validation warnings */}
+			{emptyField ? (
+				<div className="mt-4 mx-auto max-w-md animate-pulse ease-in-out">
+					<div role="alert" className="alert alert-warning">
+						<p className="text-2xl">
+							Input fields cannot be left blank
+						</p>
+					</div>
+				</div>
+			) : (
+				''
+			)}
+			{invalidEmail ? (
+				<div className="mt-4 mx-auto max-w-md animate-pulse ease-in-out">
+					<div role="alert" className="alert alert-warning">
+						<p className="text-2xl">Please provide a valid email</p>
+					</div>
+				</div>
+			) : (
+				''
+			)}
 			<div className="mt-4 mx-auto max-w-md">
 				<div role="alert" className="alert alert-warning">
 					<p className="text-2xl">
-						<span className="font-medium">Note:</span> This page does not yet have a functioning back end.
-						Please direct your questions to:<br/>
-						Email: simon@gmail.com<br/>
+						<span className="font-medium">Note:</span> This page
+						does not yet have a functioning back end. Please direct
+						your questions to:
+						<br />
+						Email: simon@gmail.com
+						<br />
 						Phone: +61 412 345 678
-						</p>
+					</p>
 				</div>
 			</div>
 		</>
