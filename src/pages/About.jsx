@@ -7,18 +7,16 @@ const About = () => {
 				<h1 className="text-4xl underline">About Me</h1>
 				<div className="">
 					<RxAvatar className="text-9xl my-12" />
-					<p className='text-xl px-4 max-w-[600px]'>
-						The sun set over the tranquil lake, casting a warm,
-						golden glow across the water. Birds chirped softly in
-						the distance, their melodies blending harmoniously with
-						the gentle rustling of leaves in the breeze. A family of
-						ducks glided gracefully across the surface, leaving
-						ripples in their wake. Nearby, a couple sat on a
-						blanket, sharing a quiet moment as they watched the day
-						turn into night. The air was filled with the sweet scent
-						of blooming flowers, and the world seemed to pause,
-						savoring the serene beauty of the evening. It was a
-						perfect end to a peaceful day.
+					<p className="text-xl px-4 max-w-[600px]">
+						I am a passionate full stack web developer with a strong
+						foundation built through a comprehensive bootcamp
+						program. With a background in IT, I bring a wealth of
+						experience and a problem-solving mindset to every
+						project. My journey in technology has equipped me with
+						the skills to create dynamic, user-friendly web
+						applications. I am eager to leverage my expertise to
+						build innovative solutions and contribute to exciting
+						development teams.
 					</p>
 				</div>
 			</article>
