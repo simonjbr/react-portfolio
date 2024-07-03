@@ -2,8 +2,6 @@ import { IoLogoGithub } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 export default function Project(project) {
-	console.log(project);
-
 	return (
 		<div className="h-min  overflow-hidden group ">
 			<Link to={project.gitHub}>
