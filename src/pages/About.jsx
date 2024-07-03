@@ -8,12 +8,13 @@ const About = () => {
 				<div className="">
 					<RxAvatar className="text-9xl my-12" />
 					<p className="text-xl px-4 max-w-[600px]">
-						I am a passionate full stack web developer with a strong
-						foundation built through a comprehensive bootcamp
-						program. With a background in IT, I bring a wealth of
-						experience and a problem-solving mindset to every
-						project. My journey in technology has equipped me with
-						the skills to create dynamic, user-friendly web
+						My name is Simon Brown and I am a passionate full stack
+						web developer, based out of Perth Western Australia,
+						with a strong foundation built through a comprehensive
+						bootcamp program. With a background in IT, I bring a
+						wealth of experience and a problem-solving mindset to
+						every project. My journey in technology has equipped me
+						with the skills to create dynamic, user-friendly web
 						applications. I am eager to leverage my expertise to
 						build innovative solutions and contribute to exciting
 						development teams.
