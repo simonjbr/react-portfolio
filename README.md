@@ -30,6 +30,9 @@ The portfolio should now automatically open in a tab of your default browser. Us
 
 > Deployed application: [https://simonjbr-portfolio.netlify.app/](https://simonjbr-portfolio.netlify.app/)
 
+Deployed screenshot:
+![Deployed screenshot](./assets/deployed-screenshot-react-portfolio.png)
+
 ## Credits
 
 [simonjbr](https://github.com/simonjbr)
