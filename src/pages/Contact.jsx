@@ -90,7 +90,7 @@ const Contact = () => {
 			{/* form validation warnings */}
 			{emptyField ? (
 				<div className="mt-4 mx-auto max-w-md animate-pulse ease-in-out">
-					<div role="alert" className="alert alert-warning">
+					<div role="alert" className="alert alert-error">
 						<p className="text-2xl">
 							Input fields cannot be left blank
 						</p>
@@ -101,7 +101,7 @@ const Contact = () => {
 			)}
 			{invalidEmail ? (
 				<div className="mt-4 mx-auto max-w-md animate-pulse ease-in-out">
-					<div role="alert" className="alert alert-warning">
+					<div role="alert" className="alert alert-error">
 						<p className="text-2xl">Please provide a valid email</p>
 					</div>
 				</div>
