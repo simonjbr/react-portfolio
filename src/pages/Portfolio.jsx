@@ -4,7 +4,7 @@ import Project from '../components/Project';
 import popChatImage from '../assets/project-image-popchat-crop.png';
 import boardgameBlissImage from '../assets/project-image-boardgame-bliss-crop.png';
 import techBlogImage from '../assets/project-image-techblog-crop.png';
-import vivoChatImage from '../assets/project-image-vivochat-crop.png';
+import vivoChatImage from '../assets/project-image-vivochat-crop2.png';
 import weatherDashboardImage from '../assets/project-image-weather-dashboard-crop.png';
 import socialNetworkApiImage from '../assets/project-image-social-network-api-crop.png';
 
@@ -12,12 +12,11 @@ const Portfolio = () => {
 	const projects = [
 		{
 			id: 1,
-			title: 'PopChat',
-			gitHub: 'https://github.com/cawooda/triumvirate',
-			description:
-				'Node.js, Express, PostgreSQL, Sequelize, Bulma, Handlebars, Multer',
-			deploy: 'https://triumvirate.onrender.com',
-			image: popChatImage,
+			title: 'vivoChat',
+			gitHub: 'https://github.com/simonjbr/vivo-chat',
+			description: 'MERN Stack, Apollo GraphQL Subscriptions, Tailwind CSS',
+			deploy: 'https://vivo-chat.onrender.com/',
+			image: vivoChatImage,
 		},
 		{
 			id: 2,
@@ -37,11 +36,12 @@ const Portfolio = () => {
 		},
 		{
 			id: 4,
-			title: 'vivoChat',
-			gitHub: 'TBA',
-			description: 'MERN Stack, Socket.io',
-			deploy: '',
-			image: vivoChatImage,
+			title: 'PopChat',
+			gitHub: 'https://github.com/cawooda/triumvirate',
+			description:
+				'Node.js, Express, PostgreSQL, Sequelize, Bulma, Handlebars, Multer',
+			deploy: 'https://triumvirate.onrender.com',
+			image: popChatImage,
 		},
 		{
 			id: 5,
