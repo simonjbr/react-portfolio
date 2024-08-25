@@ -12,7 +12,7 @@ export default function Footer() {
 				<Link to="https://github.com/simonjbr">
 					<IoLogoGithub className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
-				<Link to="https://au.linkedin.com/">
+				<Link to="https://www.linkedin.com/in/simon-brown-40b56b320/">
 					<IoLogoLinkedin className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
 				<Link to="https://stackoverflow.com/">
