@@ -23,3 +23,5 @@ src/assets/originals
 *.njsproj
 *.sln
 *.sw?
+
+.env

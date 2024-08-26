@@ -1,13 +1,14 @@
-import { useState } from 'react';
+// import dotenv from 'dotenv';
+import { useRef, useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import emailjs from '@emailjs/browser';
+
+// dotenv.config();
 
 const Contact = () => {
-	// const [name, setName] = useState('');
-	// const [email, setEmail] = useState('');
-	// const [message, setMessage] = useState('');
-
 	const [emptyField, setEmptyField] = useState(false);
 	const [invalidEmail, setInvalidEmail] = useState(false);
+	const form = useRef();
 
 	// validate input on blur
 	const handleOnBlur = (e) => {
@@ -43,9 +44,24 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert(
-			`This page does not yet have a functioning backend. Please direct your questions to simon@gmail.com`
-		);
+
+		emailjs
+			.sendForm(
+				import.meta.env.VITE_REACT_APP_SERVICE_ID,
+				import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
+				form.current,
+				{
+					publicKey: import.meta.env.VITE_REACT_APP_PUBLIC_KEY,
+				}
+			)
+			.then(
+				() => {
+					console.log('SUCCESS!');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+				}
+			);
 	};
 
 	return (
@@ -53,7 +69,7 @@ const Contact = () => {
 			<article className="pt-4 px-4">
 				<h1 className="text-4xl underline mb-4">Contact</h1>
 				<div className="mx-auto block max-w-md rounded-lg bg-cyan-950 p-6 shadow-xl">
-					<form onSubmit={handleSubmit}>
+					<form ref={form} onSubmit={handleSubmit}>
 						<label className="text-2xl input input-bordered flex items-center gap-3 mb-3">
 							Name:
 							<input
@@ -81,7 +97,11 @@ const Contact = () => {
 							className="text-2xl w-full textarea textarea-bordered grow text-gray-300"
 							placeholder="Enter message..."
 						></textarea>
-						<button type="submit" className="btn text-2xl">
+						<button
+							type="submit"
+							className="btn text-2xl"
+							value={'Send'}
+						>
 							Submit
 						</button>
 					</form>
@@ -108,19 +128,6 @@ const Contact = () => {
 			) : (
 				''
 			)}
-			<div className="mt-4 mx-auto max-w-md">
-				<div role="alert" className="alert alert-warning">
-					<p className="text-2xl">
-						<span className="font-medium">Note:</span> This page
-						does not yet have a functioning back end. Please direct
-						your questions to:
-						<br />
-						Email: simon@gmail.com
-						<br />
-						Phone: +61 412 345 678
-					</p>
-				</div>
-			</div>
 		</>
 	);
 };
