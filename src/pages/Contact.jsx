@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 // dotenv.config();
 
@@ -57,9 +58,12 @@ const Contact = () => {
 			.then(
 				() => {
 					console.log('SUCCESS!');
+					toast.success('Successfully sent email!');
+					e.target.reset();
 				},
 				(error) => {
 					console.log('FAILED...', error.text);
+					toast.error('Failed to send email!');
 				}
 			);
 	};
