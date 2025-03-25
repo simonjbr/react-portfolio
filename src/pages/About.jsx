@@ -12,7 +12,7 @@ const About = () => {
 						<Headshot />
 					</div>
 					<div className="prose max-w-2xl">
-						<p className="text-lg leading-relaxed">
+						<p className="text-2xl leading-relaxed">
 							My name is Simon Brown and I am a passionate full
 							stack web developer, based out of Perth Western
 							Australia, with a strong foundation built through a
@@ -20,7 +20,7 @@ const About = () => {
 							IT, I bring a wealth of experience and a
 							problem-solving mindset to every project.
 						</p>
-						<p className="text-lg leading-relaxed mt-4">
+						<p className="text-2xl leading-relaxed mt-4">
 							My journey in technology has equipped me with the
 							skills to create dynamic, user-friendly web
 							applications. I am eager to leverage my expertise to

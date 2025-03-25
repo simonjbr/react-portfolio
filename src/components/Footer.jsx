@@ -1,7 +1,6 @@
 import {
 	IoLogoGithub,
 	IoLogoLinkedin,
-	IoLogoStackoverflow,
 } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
@@ -14,9 +13,6 @@ export default function Footer() {
 				</Link>
 				<Link to="https://www.linkedin.com/in/simon-brown-40b56b320/">
 					<IoLogoLinkedin className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
-				</Link>
-				<Link to="https://stackoverflow.com/">
-					<IoLogoStackoverflow className="text-5xl text-gray-500 hover:text-gray-300 cursor-pointer" />
 				</Link>
 			</div>
 		</>

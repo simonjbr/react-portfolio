@@ -22,7 +22,7 @@ export default function Project(project) {
 							<IoLogoGithub className="hover:text-white hover:text-5xl  transition-all duration-300" />
 						</Link>
 					</div>
-					<p className="text-2xl hover:text-white hover:text-3xl  transition-all duration-300 break-all">
+					<p className="text-2xl hover:text-white hover:text-3xl  transition-all duration-300 break-normal">
 						{project.description}
 					</p>
 				</div>

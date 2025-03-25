@@ -103,7 +103,7 @@ const Contact = () => {
 						></textarea>
 						<button
 							type="submit"
-							className="btn text-2xl"
+							className="btn text-2xl border-[#1d232a] bg-[#1d232a] hover:bg-gray-900 hover:border-gray-900 text-gray-300"
 							value={'Send'}
 						>
 							Submit
