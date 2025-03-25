@@ -7,11 +7,20 @@ import techBlogImage from '../assets/project-image-techblog-crop.png';
 import vivoChatImage from '../assets/project-image-vivochat-crop2.png';
 import weatherDashboardImage from '../assets/project-image-weather-dashboard-crop.png';
 import socialNetworkApiImage from '../assets/project-image-social-network-api-crop.png';
+import scrabblrImage from '../assets/project-image-scrabblr-crop.png';
 
 const Portfolio = () => {
 	const projects = [
 		{
 			id: 1,
+			title: 'Scrabblr',
+			gitHub: 'https://github.com/simonjbr/scrabblr',
+			description: 'Node.js, Express, React, Google Cloud Vision API',
+			deploy: 'https://github.com/simonjbr/scrabblr',
+			image: scrabblrImage,
+		},
+		{
+			id: 2,
 			title: 'vivoChat',
 			gitHub: 'https://github.com/simonjbr/vivo-chat',
 			description:
@@ -20,7 +29,7 @@ const Portfolio = () => {
 			image: vivoChatImage,
 		},
 		{
-			id: 2,
+			id: 3,
 			title: 'Boardgame Bliss',
 			gitHub: 'https://github.com/awesome-foursome/boardgame-bliss',
 			description: 'JavaScript, HTML, CSS, JQuery, Bulma',
@@ -28,7 +37,7 @@ const Portfolio = () => {
 			image: boardgameBlissImage,
 		},
 		{
-			id: 3,
+			id: 4,
 			title: 'techBlog',
 			gitHub: 'https://github.com/simonjbr/tech-blog',
 			description: 'Node.js, Express, PostgreSQL, Sequelize, Handlebars',
@@ -36,7 +45,7 @@ const Portfolio = () => {
 			image: techBlogImage,
 		},
 		{
-			id: 4,
+			id: 5,
 			title: 'PopChat',
 			gitHub: 'https://github.com/cawooda/triumvirate',
 			description:
@@ -45,7 +54,7 @@ const Portfolio = () => {
 			image: popChatImage,
 		},
 		{
-			id: 5,
+			id: 6,
 			title: 'Weather Dashboard',
 			gitHub: 'https://github.com/simonjbr/weather-dashboard',
 			description: 'JQuery, Bootstrap',
@@ -53,7 +62,7 @@ const Portfolio = () => {
 			image: weatherDashboardImage,
 		},
 		{
-			id: 6,
+			id: 7,
 			title: 'Social Network API',
 			gitHub: 'https://github.com/simonjbr/social-network-api',
 			description: 'Node.js, Express, MongoDB, Mongoose',
