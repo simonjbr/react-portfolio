@@ -14,7 +14,8 @@ const Portfolio = () => {
 			id: 1,
 			title: 'vivoChat',
 			gitHub: 'https://github.com/simonjbr/vivo-chat',
-			description: 'MERN Stack, Apollo GraphQL Subscriptions, Tailwind CSS',
+			description:
+				'MERN Stack, Apollo GraphQL Subscriptions, Tailwind CSS',
 			deploy: 'https://vivo-chat.onrender.com/',
 			image: vivoChatImage,
 		},
@@ -65,7 +66,7 @@ const Portfolio = () => {
 		<>
 			<article className="pt-4 ps-4">
 				<h1 className="text-4xl underline">Portfolio</h1>
-				<div className="columns-2 max-sm:columns-1 my-12 px-6 gap-6">
+				<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-12 px-6">
 					{projects.map((project) => (
 						<div key={project.id} className="p-3 relative">
 							<Project {...project} />
