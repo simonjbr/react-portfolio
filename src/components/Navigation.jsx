@@ -11,7 +11,7 @@ export default function Navigation() {
 					<Link
 						className={`btn-ghost rounded-md p-2 ${
 							currentPage === '/' &&
-							'underline text-gray-300 font-medium'
+							'underline text-gray-100 font-medium'
 						}`}
 						to="/"
 					>
@@ -22,7 +22,7 @@ export default function Navigation() {
 					<Link
 						className={`btn-ghost rounded-md p-2 ${
 							currentPage === '/Portfolio' &&
-							'underline text-gray-300 font-medium'
+							'underline text-gray-100 font-medium'
 						}`}
 						to="/Portfolio"
 					>
@@ -33,7 +33,7 @@ export default function Navigation() {
 					<Link
 						className={`btn-ghost rounded-md p-2 ${
 							currentPage === '/Contact' &&
-							'underline text-gray-300 font-medium'
+							'underline text-gray-100 font-medium'
 						}`}
 						to="/Contact"
 					>
@@ -44,7 +44,7 @@ export default function Navigation() {
 					<Link
 						className={`btn-ghost rounded-md p-2 ${
 							currentPage === '/Resume' &&
-							'underline text-gray-300 font-medium'
+							'underline text-gray-100 font-medium'
 						}`}
 						to="/Resume"
 					>
